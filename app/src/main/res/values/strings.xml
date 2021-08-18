@@ -1,4 +1,7 @@
 <resources>
     <string name="hello">Hello welcome in hell</string>
     <string name="app_name">Android</string>
+    <string name="push_me">Push Me</string>
+    <string name="bite">bite me</string>
+    <string name="ok">OK</string>
 </resources>
