@@ -17,7 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
    private EditText edd;
    private Button btnn;
    private ImageView digit;
-   private ImageView cc;
+   private ImageView applelogo;
    private TextView pol;
 
 
@@ -32,11 +32,11 @@ public class MainActivity2 extends AppCompatActivity {
     edd = findViewById(R.id.edd);
     btnn = findViewById(R.id.btnn);
     digit = findViewById(R.id.digit);
-    cc = findViewById(R.id.cc);
+    applelogo = findViewById(R.id.applelogo);
     pol = findViewById(R.id.pol);
 
     digit.setVisibility(View.INVISIBLE);
-    cc.setVisibility(View.INVISIBLE);
+    applelogo.setVisibility(View.INVISIBLE);
     pol.setVisibility(View.INVISIBLE);
 
     btnn.setOnClickListener(new View.OnClickListener() {
@@ -46,13 +46,13 @@ public class MainActivity2 extends AppCompatActivity {
                alertt.setTitle("Comment va")
                        .setMessage("Comment ca marche")
                        .setPositiveButton("non me click pas",(dialogInterface,i)->{dialogInterface.dismiss();
-                       cc.setVisibility(View.VISIBLE);
+                       applelogo.setVisibility(View.VISIBLE);
                        pol.setVisibility(View.VISIBLE);})
                        .setNegativeButton("enfonce moi", (dialogInterface, i)->{dialogInterface.dismiss();
                            AlertDialog.Builder al2 = new AlertDialog.Builder(MainActivity2.this);// nomdetaclasseoutes.this
                            ImageView ima = new ImageView(MainActivity2.this);
 //                            ima = ima.findViewById(R.id.digit);
-                           ima.setImageResource(R.drawable.logo04);
+                           ima.setImageResource(R.drawable.applelogo);
                            al2.setView(ima);
                            al2.setNeutralButton("click-me", new DialogInterface.OnClickListener() {
                                @Override
